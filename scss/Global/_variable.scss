@@ -1,0 +1,73 @@
+/* variable.scss */
+
+/* フォント　書体 */
+$font-family-main: 'Noto Sans JP';
+
+$font-family-fontawesome: 'Font Awesome 5 Free';
+
+
+/* フォント　太さ*/
+$font-weight-s: 400;
+$font-weight-normal: 700;
+$font-weight-l: 900;
+
+
+/* カラー */
+$color-black: #000;
+$color-white: #fff;
+$color-cp: #2498B3;
+
+$font-color-main: #121212;
+$font-color-sub: #131D34;
+
+$background-color-footer: #D4F1F8;
+
+
+/* レスポンシブ設定　ブレークポイントmap */
+$breakpoints: (
+  "sp": "screen and (max-width: 767px)",
+  "tab": "screen and (min-width: 768px)",
+  "pc": "screen and (min-width: 1201px)",
+);
+
+/* レスポンシブ設定　スマホ最小幅　PC最大幅 */
+$min-width-sp: 375px;
+$max-width-pc: 1920px;
+
+
+/* レスポンシブ設定　リキッドレイアウト用 */
+$width-ideal-sp: 375;
+$width-ideal-tab: 834;
+$width-ideal-pc: 1920;
+
+$width-current-viewport: 100vw;
+
+$width-clamped-viewport: clamp($min-width-sp, $width-current-viewport, $max-width-pc);
+
+$liquid-sp: #{$width-clamped-viewport} / #{$width-ideal-sp};
+$liquid-tab: #{$width-clamped-viewport} / #{$width-ideal-tab};
+$liquid-pc: #{$width-clamped-viewport} / #{$width-ideal-pc};
+
+
+/* レイアウト　幅*/
+$grid-template-columns-sp: minmax($min-width-sp, $width-current-viewport);
+$grid-template-columns-tab: $width-current-viewport;
+//$grid-template-columns-pc: ;
+
+/* サークル　線 */
+$border-circle: solid 6px;
+
+/* 角丸 */
+$border-btn: 4px;
+$border-box: 10px;
+
+/* 行高 */
+$line-height: 1.7;
+
+/* gap */
+$row-gap-box: 20px;
+$column-gap-service: 100px;
+
+/* service 幅 */
+$width-service-tab: 29.33%;
+$width-service-pc: 229px;

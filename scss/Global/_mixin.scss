@@ -1,0 +1,15 @@
+/* mixin.scss */
+@use "variable" as v;
+@use "sass:map";
+
+/* フォントサイズ設定　簡易化 */
+@mixin fz($size: 16) {
+  font-size: ($size / 10) + rem;
+}
+
+/* レスポンシブ設定 */
+@mixin mq($breakpoint: tab) {
+  @media #{map.get(v.$breakpoints, $breakpoint)} {
+    @content;
+  }
+}

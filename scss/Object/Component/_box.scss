@@ -1,0 +1,12 @@
+/* box.scss */
+@use "../../Global" as g;
+
+.c-box {
+  background-color: g.$color-white;
+  padding: 19px 0 20px;
+  @include g.mq() {
+    max-width: 530px;
+    border-radius: g.$border-box;
+    padding: 43px 40px 19px;
+  }
+}
