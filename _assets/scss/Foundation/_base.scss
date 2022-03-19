@@ -1,0 +1,30 @@
+/* base.scss */
+@use "../Global" as g;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto 100px;
+  grid-template-columns: g.$grid-template-columns-sp;
+  @include g.mq () {
+    grid-template-columns: g.$grid-template-columns-tab;
+  }
+  
+  color: g.$font-color-main;
+  font-family: g.$font-family-main;
+  font-weight: g.$font-weight-normal;
+  line-height: g.$line-height;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  >li {
+    list-style: none;
+  }
+}

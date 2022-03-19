@@ -1,0 +1,10 @@
+/* circle.scss */
+@use "../../Global" as g;
+
+.c-circle {
+  width: 230px;
+  height: 230px;
+  border: g.$border-circle g.$color-black;
+  border-radius: 50%;
+  background-color: g.$color-white;
+}

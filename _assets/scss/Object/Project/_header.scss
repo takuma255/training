@@ -1,0 +1,19 @@
+/* header.scss */
+@use "../../Global" as g;
+
+.p-header {
+  background-color: g.$color-white;
+
+  &__title {
+    >.c-link {
+      >.c-description {
+        display: none;
+      }
+    }
+  }
+
+
+  &__nav {
+    display: none;
+  }
+}
